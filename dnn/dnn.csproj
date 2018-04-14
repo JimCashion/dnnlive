@@ -1,0 +1,462 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42DFBCC5-4BEA-4DD5-A18C-8E00BEE17231}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dnn</RootNamespace>
+    <AssemblyName>dnn</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="java\assets\angrybaddie.png" />
+    <Content Include="java\assets\arrow1.png" />
+    <Content Include="java\assets\arrow2.png" />
+    <Content Include="java\assets\arrow3.png" />
+    <Content Include="java\assets\baddie copy.png" />
+    <Content Include="java\assets\baddie.png" />
+    <Content Include="java\assets\baddie1.png" />
+    <Content Include="java\assets\blood.png" />
+    <Content Include="java\assets\bullet.png" />
+    <Content Include="java\assets\buttonleft.png" />
+    <Content Include="java\assets\cache.png" />
+    <Content Include="java\assets\cachesmall.png" />
+    <Content Include="java\assets\cbody copy.png" />
+    <Content Include="java\assets\cbody.png" />
+    <Content Include="java\assets\chead copy.png" />
+    <Content Include="java\assets\chead.png" />
+    <Content Include="java\assets\clickforcoordinates.png" />
+    <Content Include="java\assets\corner.png" />
+    <Content Include="java\assets\cp\1.png" />
+    <Content Include="java\assets\cp\2.png" />
+    <Content Include="java\assets\cp\3.png" />
+    <Content Include="java\assets\cp\4.png" />
+    <Content Include="java\assets\cp\5.png" />
+    <Content Include="java\assets\cp\6.png" />
+    <Content Include="java\assets\cp\7.png" />
+    <Content Include="java\assets\cp\8.png" />
+    <Content Include="java\assets\cp\9.png" />
+    <Content Include="java\assets\cp\blank1.png" />
+    <Content Include="java\assets\cp\blank2.png" />
+    <Content Include="java\assets\cp\blank3.png" />
+    <Content Include="java\assets\cp\blank4.png" />
+    <Content Include="java\assets\cp\blank5.png" />
+    <Content Include="java\assets\cp\blank6.png" />
+    <Content Include="java\assets\cp\blank7.png" />
+    <Content Include="java\assets\cp\blank8.png" />
+    <Content Include="java\assets\cp\blank9.png" />
+    <Content Include="java\assets\diamond.png" />
+    <Content Include="java\assets\dinosaurs.png" />
+    <Content Include="java\assets\dude copy.png" />
+    <Content Include="java\assets\dude.png" />
+    <Content Include="java\assets\dudesmall.png" />
+    <Content Include="java\assets\enemy-bullet.png" />
+    <Content Include="java\assets\explode.png" />
+    <Content Include="java\assets\fence_h.png" />
+    <Content Include="java\assets\fence_v.png" />
+    <Content Include="java\assets\firstaid.png" />
+    <Content Include="java\assets\hborder.png" />
+    <Content Include="java\assets\i4\i0x0.png" />
+    <Content Include="java\assets\i4\i0x1.png" />
+    <Content Include="java\assets\i4\i0x2.png" />
+    <Content Include="java\assets\i4\i0x3.png" />
+    <Content Include="java\assets\i4\i1x0.png" />
+    <Content Include="java\assets\i4\i1x1.png" />
+    <Content Include="java\assets\i4\i1x2.png" />
+    <Content Include="java\assets\i4\i1x3.png" />
+    <Content Include="java\assets\i4\i2x0.png" />
+    <Content Include="java\assets\i4\i2x1.png" />
+    <Content Include="java\assets\i4\i2x2.png" />
+    <Content Include="java\assets\i4\i2x3.png" />
+    <Content Include="java\assets\i4\i3x0.png" />
+    <Content Include="java\assets\i4\i3x1.png" />
+    <Content Include="java\assets\i4\i3x2.png" />
+    <Content Include="java\assets\i4\i3x3.png" />
+    <Content Include="java\assets\i5\5x5.png" />
+    <Content Include="java\assets\i5\i0x0.png" />
+    <Content Include="java\assets\i5\i0x1.png" />
+    <Content Include="java\assets\i5\i0x2.png" />
+    <Content Include="java\assets\i5\i0x3.png" />
+    <Content Include="java\assets\i5\i0x4.png" />
+    <Content Include="java\assets\i5\i1x0.png" />
+    <Content Include="java\assets\i5\i1x1.png" />
+    <Content Include="java\assets\i5\i1x2.png" />
+    <Content Include="java\assets\i5\i1x3.png" />
+    <Content Include="java\assets\i5\i1x4.png" />
+    <Content Include="java\assets\i5\i2x0.png" />
+    <Content Include="java\assets\i5\i2x1.png" />
+    <Content Include="java\assets\i5\i2x2.png" />
+    <Content Include="java\assets\i5\i2x3.png" />
+    <Content Include="java\assets\i5\i2x4.png" />
+    <Content Include="java\assets\i5\i3x0.png" />
+    <Content Include="java\assets\i5\i3x1.png" />
+    <Content Include="java\assets\i5\i3x2.png" />
+    <Content Include="java\assets\i5\i3x3.png" />
+    <Content Include="java\assets\i5\i3x4.png" />
+    <Content Include="java\assets\i5\i4x0.png" />
+    <Content Include="java\assets\i5\i4x1.png" />
+    <Content Include="java\assets\i5\i4x2.png" />
+    <Content Include="java\assets\i5\i4x3.png" />
+    <Content Include="java\assets\i5\i4x4.png" />
+    <Content Include="java\assets\i6\6x6.png" />
+    <Content Include="java\assets\i6\i0x0.png" />
+    <Content Include="java\assets\i6\i0x1.png" />
+    <Content Include="java\assets\i6\i0x2.png" />
+    <Content Include="java\assets\i6\i0x3.png" />
+    <Content Include="java\assets\i6\i0x4.png" />
+    <Content Include="java\assets\i6\i0x5.png" />
+    <Content Include="java\assets\i6\i1x0.png" />
+    <Content Include="java\assets\i6\i1x1.png" />
+    <Content Include="java\assets\i6\i1x2.png" />
+    <Content Include="java\assets\i6\i1x3.png" />
+    <Content Include="java\assets\i6\i1x4.png" />
+    <Content Include="java\assets\i6\i1x5.png" />
+    <Content Include="java\assets\i6\i2x0.png" />
+    <Content Include="java\assets\i6\i2x1.png" />
+    <Content Include="java\assets\i6\i2x2.png" />
+    <Content Include="java\assets\i6\i2x3.png" />
+    <Content Include="java\assets\i6\i2x4.png" />
+    <Content Include="java\assets\i6\i2x5.png" />
+    <Content Include="java\assets\i6\i3x0.png" />
+    <Content Include="java\assets\i6\i3x1.png" />
+    <Content Include="java\assets\i6\i3x2.png" />
+    <Content Include="java\assets\i6\i3x3.png" />
+    <Content Include="java\assets\i6\i3x4.png" />
+    <Content Include="java\assets\i6\i3x5.png" />
+    <Content Include="java\assets\i6\i4x0.png" />
+    <Content Include="java\assets\i6\i4x1.png" />
+    <Content Include="java\assets\i6\i4x2.png" />
+    <Content Include="java\assets\i6\i4x3.png" />
+    <Content Include="java\assets\i6\i4x4.png" />
+    <Content Include="java\assets\i6\i4x5.png" />
+    <Content Include="java\assets\i6\i5x0.png" />
+    <Content Include="java\assets\i6\i5x1.png" />
+    <Content Include="java\assets\i6\i5x2.png" />
+    <Content Include="java\assets\i6\i5x3.png" />
+    <Content Include="java\assets\i6\i5x4.png" />
+    <Content Include="java\assets\i6\i5x5.png" />
+    <Content Include="java\assets\i7\7x7.png" />
+    <Content Include="java\assets\invader.png" />
+    <Content Include="java\assets\invader32x32x4.png" />
+    <Content Include="java\assets\jump.png" />
+    <Content Include="java\assets\left.png" />
+    <Content Include="java\assets\logo1.png" />
+    <Content Include="java\assets\pen copy.png" />
+    <Content Include="java\assets\pen.png" />
+    <Content Include="java\assets\platform.png" />
+    <Content Include="java\assets\platformlight.png" />
+    <Content Include="java\assets\player.png" />
+    <Content Include="java\assets\randomdinos\rd1l.png" />
+    <Content Include="java\assets\randomdinos\rd1r.png" />
+    <Content Include="java\assets\randomdinos\rd2l.png" />
+    <Content Include="java\assets\randomdinos\rd2r.png" />
+    <Content Include="java\assets\randomdinos\rd3l.png" />
+    <Content Include="java\assets\randomdinos\rd3r.png" />
+    <Content Include="java\assets\randomdinos\rd4l.png" />
+    <Content Include="java\assets\randomdinos\rd4r.png" />
+    <Content Include="java\assets\randomdinos\rd5l.png" />
+    <Content Include="java\assets\randomdinos\rd5r.png" />
+    <Content Include="java\assets\randomdinos\rd6l.png" />
+    <Content Include="java\assets\randomdinos\rd6r.png" />
+    <Content Include="java\assets\randomdinos\rd7l.png" />
+    <Content Include="java\assets\randomdinos\rd7r.png" />
+    <Content Include="java\assets\randomdinos\rd8l.png" />
+    <Content Include="java\assets\randomdinos\rd8r.png" />
+    <Content Include="java\assets\randomdinos\rd9l.png" />
+    <Content Include="java\assets\randomdinos\rd9r.png" />
+    <Content Include="java\assets\right.png" />
+    <Content Include="java\assets\sign_stop.png" />
+    <Content Include="java\assets\sky.png" />
+    <Content Include="java\assets\star.png" />
+    <Content Include="java\assets\starfield.png" />
+    <Content Include="java\assets\steg copy 2.png" />
+    <Content Include="java\assets\steg copy.png" />
+    <Content Include="java\assets\steg.png" />
+    <Content Include="java\assets\steg128-108.png" />
+    <Content Include="java\assets\stegasaurusjump.png" />
+    <Content Include="java\assets\stegasaurusleft.png" />
+    <Content Include="java\assets\stegasaurusright.png" />
+    <Content Include="java\assets\steginvader.png" />
+    <Content Include="java\assets\stegsmall.png" />
+    <Content Include="java\assets\steg_angry.png" />
+    <Content Include="java\assets\steg_friendly.png" />
+    <Content Include="java\assets\vborder.png" />
+    <Content Include="java\Bonus\index.aspx" />
+    <Content Include="java\Bonus\index.html" />
+    <Content Include="java\Bonus\js\aspx.js" />
+    <Content Include="java\Bonus\js\boot.js" />
+    <Content Include="java\Bonus\js\game.js" />
+    <Content Include="java\Bonus\js\load.js" />
+    <Content Include="java\Bonus\js\lose.js" />
+    <Content Include="java\Bonus\js\menu.js" />
+    <Content Include="java\Bonus\js\menu1.js" />
+    <Content Include="java\Bonus\js\notaspx.js" />
+    <Content Include="java\Bonus\js\play.js" />
+    <Content Include="java\Bonus\js\play1.js" />
+    <Content Include="java\Bonus\js\play2.js" />
+    <Content Include="java\Bonus\js\win.js" />
+    <Content Include="java\G1\index.aspx" />
+    <Content Include="java\G1\index.html" />
+    <Content Include="java\G1\js\boot.js" />
+    <Content Include="java\G1\js\aspx.js" />
+    <Content Include="java\G1\js\game.js" />
+    <Content Include="java\G1\js\load.js" />
+    <Content Include="java\G1\js\lose.js" />
+    <Content Include="java\G1\js\menu.js" />
+    <Content Include="java\G1\js\notaspx.js" />
+    <Content Include="java\G1\js\play.js" />
+    <Content Include="java\G1\js\win.js" />
+    <Content Include="java\G2\index.aspx" />
+    <Content Include="java\G2\index.html" />
+    <Content Include="java\G2\js\aspx.js" />
+    <Content Include="java\G2\js\boot.js" />
+    <Content Include="java\G2\js\game.js" />
+    <Content Include="java\G2\js\load.js" />
+    <Content Include="java\G2\js\lose.js" />
+    <Content Include="java\G2\js\menu.js" />
+    <Content Include="java\G2\js\notaspx.js" />
+    <Content Include="java\G2\js\play.js" />
+    <Content Include="java\G2\js\win.js" />
+    <Content Include="java\G3\index.aspx" />
+    <Content Include="java\G3\index.html" />
+    <Content Include="java\G3\js\aspx.js" />
+    <Content Include="java\G3\js\boot.js" />
+    <Content Include="java\G3\js\game.js" />
+    <Content Include="java\G3\js\load.js" />
+    <Content Include="java\G3\js\lose.js" />
+    <Content Include="java\G3\js\menu.js" />
+    <Content Include="java\G3\js\notaspx.js" />
+    <Content Include="java\G3\js\play.js" />
+    <Content Include="java\G3\js\win.js" />
+    <Content Include="java\G4\index.aspx" />
+    <Content Include="java\G4\index.html" />
+    <Content Include="java\G4\js\aspx.js" />
+    <Content Include="java\G4\js\boot.js" />
+    <Content Include="java\G4\js\game.js" />
+    <Content Include="java\G4\js\load.js" />
+    <Content Include="java\G4\js\lose.js" />
+    <Content Include="java\G4\js\menu.js" />
+    <Content Include="java\G4\js\notaspx.js" />
+    <Content Include="java\G4\js\play.js" />
+    <Content Include="java\G4\js\win.js" />
+    <Content Include="java\G5\index.aspx" />
+    <Content Include="java\G5\index.html" />
+    <Content Include="java\G5\js\aspx.js" />
+    <Content Include="java\G5\js\boot.js" />
+    <Content Include="java\G5\js\game.js" />
+    <Content Include="java\G5\js\load.js" />
+    <Content Include="java\G5\js\lose.js" />
+    <Content Include="java\G5\js\menu.js" />
+    <Content Include="java\G5\js\notaspx.js" />
+    <Content Include="java\G5\js\play.js" />
+    <Content Include="java\G5\js\win.js" />
+    <Content Include="java\G6\index.aspx" />
+    <Content Include="java\G6\index.html" />
+    <Content Include="java\G6\js\aspx.js" />
+    <Content Include="java\G6\js\boot.js" />
+    <Content Include="java\G6\js\game.js" />
+    <Content Include="java\G6\js\load.js" />
+    <Content Include="java\G6\js\lose.js" />
+    <Content Include="java\G6\js\menu.js" />
+    <Content Include="java\G6\js\notaspx.js" />
+    <Content Include="java\G6\js\play.js" />
+    <Content Include="java\G6\js\win.js" />
+    <Content Include="java\G7\index.aspx" />
+    <Content Include="java\G7\index.html" />
+    <Content Include="java\G7\js\aspx.js" />
+    <Content Include="java\G7\js\boot.js" />
+    <Content Include="java\G7\js\cleared.js" />
+    <Content Include="java\G7\js\game.js" />
+    <Content Include="java\G7\js\global.js" />
+    <Content Include="java\G7\js\load.js" />
+    <Content Include="java\G7\js\lose.js" />
+    <Content Include="java\G7\js\menu.js" />
+    <Content Include="java\G7\js\notaspx.js" />
+    <Content Include="java\G7\js\play.js" />
+    <Content Include="java\G7\js\win.js" />
+    <Content Include="java\G8\index.aspx" />
+    <Content Include="java\G8\index.html" />
+    <Content Include="java\G8\js\aspx.js" />
+    <Content Include="java\G8\js\boot.js" />
+    <Content Include="java\G8\js\game.js" />
+    <Content Include="java\G8\js\load.js" />
+    <Content Include="java\G8\js\lose.js" />
+    <Content Include="java\G8\js\menu.js" />
+    <Content Include="java\G8\js\notaspx.js" />
+    <Content Include="java\G8\js\play.js" />
+    <Content Include="java\G8\js\win.js" />
+    <Content Include="java\G8\js\xxxxglobal.js" />
+    <Content Include="java\G9\index.aspx" />
+    <Content Include="java\G9\index.html" />
+    <Content Include="java\G9\js\aspx.js" />
+    <Content Include="java\G9\js\boot.js" />
+    <Content Include="java\G9\js\game.js" />
+    <Content Include="java\G9\js\load.js" />
+    <Content Include="java\G9\js\lose.js" />
+    <Content Include="java\G9\js\maze.js" />
+    <Content Include="java\G9\js\menu.js" />
+    <Content Include="java\G9\js\notaspx.js" />
+    <Content Include="java\G9\js\play.js" />
+    <Content Include="java\G9\js\win.js" />
+    <Content Include="java\JCASW\baddieclass.js" />
+    <Content Include="java\JCASW\cellclass.js" />
+    <Content Include="java\JCASW\fenceclass.js" />
+    <Content Include="java\JCASW\global.js" />
+    <Content Include="java\JCASW\goodieclass.js" />
+    <Content Include="java\JCASW\LabelButtonClass.js" />
+    <Content Include="java\JCASW\ledgeclass.js" />
+    <Content Include="java\JCASW\phaser.js" />
+    <Content Include="java\JCASW\playerclass.js" />
+    <Content Include="java\JCASW\utils.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="java\Bonus\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="java\Bonus\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="java\G1\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="java\G1\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="java\G2\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="java\G2\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="java\G3\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="java\G3\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="java\G4\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="java\G4\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="java\G5\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="java\G5\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="java\G6\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="java\G6\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="java\G7\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="java\G7\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="java\G8\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="java\G8\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="java\G9\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="java\G9\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="java\JCASW\SecureStuff.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50792</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,5 @@
+c:\Jim\dnn\dnn\bin\dnn.dll
+c:\Jim\dnn\dnn\bin\dnn.pdb
+c:\Jim\dnn\dnn\obj\Debug\ResolveAssemblyReference.cache
+c:\Jim\dnn\dnn\obj\Debug\dnn.dll
+c:\Jim\dnn\dnn\obj\Debug\dnn.pdb
